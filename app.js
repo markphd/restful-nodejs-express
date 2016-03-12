@@ -1,8 +1,8 @@
 var express = require('express'),
     app = express(),
-    port = 9000;
-
-var appRouter = express.Router();
+    port = 9000,
+    appRouter = express.Router();
+    
 app.use('/api', appRouter);
 
 appRouter.route('/path')
