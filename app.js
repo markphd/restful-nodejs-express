@@ -3,7 +3,7 @@ var express = require('express'),
     port = 9000;
 
 app.get('/', function(req, res) {
-  res.send('Yey, simple app!')
+  res.send('Running server with Nodemon & Gulp')
 })
 
 app.listen(port, function(req, res) {
