@@ -7,7 +7,7 @@ app.use('/api', appRouter);
 
 appRouter.route('/path')
   .get(function(req, res) {
-    var responseJSON = { foo: 'bar'};
+    var responseJSON = { foo: 'bar', hello: 'foo'};
     res.json(responseJSON);
   })
 
