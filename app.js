@@ -20,7 +20,9 @@ appRouter.route('/path')
 
 appRouter.route('/Books')
   .get(function(req, res) {
-  	Book.find(function(err, books){
+  	var query = req.query;
+  	
+  	Book.find(query, function(err, books){
   		if (err) return err
   		res.json(books);
   	})

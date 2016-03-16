@@ -25,4 +25,11 @@ gulp.task('STRING_taskname', function(){
 });
 ```
 
+### Connecting to DB via Mongoose
+`var mongoose = require('mongoose')`
+`mongoose.connect('mongodb://localhost/DB_NAME')`
+
+
+### Import Dataset to MongoDB
+`mongoimport --db bookAPI --collection books --file data.json --jsonArray`
 
